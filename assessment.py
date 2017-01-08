@@ -62,7 +62,7 @@ included in the doctest.
 def match_hometowns(town_name):
     """Evaluate if town_name input is my home-town. 
 
-    Takes a town name as a string and evaluates to
+    Takes a town name as a string and utilizing a conditional statement, evaluates to
     `True` if it is your hometown, and `False` otherwise.
 
     """
@@ -107,6 +107,7 @@ def match_backgrounds(home_town, first_name, last_name):
         here', where are you from?" depending on commanility or divergent backgrounds 
     
     """
+    
     name = join_names(first_name, last_name)
     home_town = match_hometowns(home_town)
 
@@ -128,7 +129,10 @@ def match_backgrounds(home_town, first_name, last_name):
 #        "blackberry."
 
 def is_berry(fruit):
-    """Determines if fruit is a berry"""
+    """Determines if fruit is a berry
+
+    Using a conditional statement, returns True if pre-set berries or False if not
+    """
     if fruit == "strawberry" or fruit == "cherry" or fruit == "blackberry":
         return True
     else:
@@ -141,7 +145,10 @@ def is_berry(fruit):
 #     is_berry() == True, and 5 if is_berry() == False.
 
 def shipping_cost(fruit):
-    """Calculates shipping cost of fruit"""
+    """Calculates shipping cost of fruit
+
+    Calling upon the is_berry function, determines shipping costs if is_berry evaluates to True
+    """
 
     berry = is_berry(fruit)
 
@@ -250,6 +257,8 @@ def accept_word(word):
 
     """ Print out a string of 3x the inputted word. 
 
+    Accept a word as an argument, extend that word by 3 using the multiple function
+    and print out at the end 
     """ 
     def multiple(word):
         extended_word = word * 3 
